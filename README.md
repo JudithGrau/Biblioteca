@@ -63,48 +63,6 @@ El proyecto permite probar distintas acciones, como agregar libros, eliminar lib
 
 ---
 
-## UML (Clases y relaciones)
-+------------------+
-| Biblioteca |
-+------------------+
-| - libros: List<Libro> |
-| - lectores: List<Lector> |
-+------------------+
-| + AgregarLibro(...) |
-| + EliminarLibro(...) |
-| + ListarLibros() |
-| + AltaLector(...) |
-| + ListarLectores() |
-| + PrestarLibro(...) |
-+------------------+
-     1
-     |
-     *
-+------------------+
-| Lector |
-+------------------+
-| - nombre: string |
-| - dni: string |
-| - prestamos: List<Libro> |
-+------------------+
-| + PuedePrestar() |
-| + AgregarPrestamo(...) |
-| + MostrarPrestamos() |
-+------------------+
-     1
-     |
-     *
-+------------------+
-| Libro |
-+------------------+
-| - titulo: string |
-| - autor: string |
-| - editorial: string |
-+------------------+
-| + MostrarInformacion() |
-+------------------+
----
-
 ## Ejemplo de Uso
 
 ```csharp
